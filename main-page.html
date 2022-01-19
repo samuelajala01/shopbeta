@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopBeta</title>
+  <link rel="icon" href="./assets/shop-icon-128.png"/>
+  <link rel="stylesheet" href="./main-page.css">
+  
+  <script src="./dexie.min.js"></script>
+</head>
+<body>
+    <nav>
+     <p>ShopBeta</p>
+    </nav>
+	<div class ="container">
+	  <form id="itemForm">
+	    <label>
+	      Name of Item:
+        <input type="text" id="nameInput" required>
+	    </label>
+	    
+      <label>
+        Quantity:
+        <input type="number" id="quantityInput" value = 1>
+	    </label>
+	    
+       <label id= 'price'>
+         Price:
+        <input type="number" id="priceInput" value= 0>
+	    </label>
+	    
+	    <button type="submit" id="addItemButton">Add Item</button>       
+	  </form>
+    <button id="deleteAllItemButton">Delete All</button>       
+	</div>
+	
+	<div id="itemsDiv"></div>
+  <div id="totalPriceDiv"></div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

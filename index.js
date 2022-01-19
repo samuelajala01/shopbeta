@@ -1,4 +1,5 @@
-const db = new Dexie('ShoppingApp')
+
+const db = new Dexie('ShopBeta')
 db.version(1).stores({items: '++id,name,price,isPurchased'} )
 
 const itemForm = document.getElementById('itemForm')
@@ -24,7 +25,9 @@ itemsDiv.innerHTML = allItems.map(item => `
       <p>${item.name}</p>
       <p>$${item.price} x ${item.quantity}</p>
     </div>
-
+    <button class="editButton" onclick="editItem(${item.id})">
+    E
+    </button>
     <button class="deleteButton" onclick="removeItem(${item.id})">
     X
     </button>
@@ -38,7 +41,7 @@ itemsDiv.innerHTML = allItems.map(item => `
 }
 
 
-window.onload = populateitemsDiv
+window.onload = populateitemsDiv;
 
 itemForm.onsubmit = async (event) =>{
   event.preventDefault()
