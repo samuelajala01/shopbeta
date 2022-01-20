@@ -6,6 +6,7 @@ const itemForm = document.getElementById('itemForm')
 const itemsDiv = document.getElementById('itemsDiv')
 const totalPrice = document.getElementById('totalPriceDiv')
 const deleteAllItemButton = document.getElementById('deleteAllItemButton')
+const container = document.querySelector('.container')
 
 
 const populateitemsDiv = async () => {
@@ -35,11 +36,31 @@ itemsDiv.innerHTML = allItems.map(item => `
     `).join('')
     const  arrayOfPrices = allItems.map(item => item.price * item.quantity)
     const totalPrice = arrayOfPrices.reduce((a, b) => a + b, 0)
+    
     if(totalPrice == 0){
-     totalPriceDiv.innerText = 'Empty List';
+
+      totalPriceDiv.innerHTML = `
+     <img src="./assets/shop-icon-128.png" id ="empty-div-img">
+      <p>Ouch, Empty List</p>
+      <button id="start-add-btn">Add Item</button>
+      `
+
+     container.style.display = 'none';
+     const startAddBtn = document.getElementById('start-add-btn')
+     const emptyDivImg = document.getElementById('empty-div-img')
+   
+     startAddBtn.addEventListener('click', (event) => {
+      container.style.display = 'block'
+      emptyDivImg.style.display = 'none'
+      event.target.style.display = 'none'
+     })
+
+     
     } else{
-      totalPriceDiv.innerText = 'Total price: $' + totalPrice
-    }
+      totalPriceDiv.innerHTML = `
+      <p>Total price: $${totalPrice}</p>
+      `
+    } 
 
 }
 

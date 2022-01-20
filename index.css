@@ -30,8 +30,6 @@ img{
   border: 1px solid orange;
   height: 300px;
   width: 90%;
-  display: flex;
-  margin: auto;
   margin-bottom: 2rem;
 }
 

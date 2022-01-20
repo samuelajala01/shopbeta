@@ -23,6 +23,15 @@ nav{
   width: 80vw;
 }
 
+img{
+  border: 1px solid orange;
+  height: 300px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
 #itemForm{
   border: 1px solid  gray;
   border-radius: 1rem;
