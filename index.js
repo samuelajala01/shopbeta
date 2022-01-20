@@ -35,8 +35,11 @@ itemsDiv.innerHTML = allItems.map(item => `
     `).join('')
     const  arrayOfPrices = allItems.map(item => item.price * item.quantity)
     const totalPrice = arrayOfPrices.reduce((a, b) => a + b, 0)
-
-    totalPriceDiv.innerText = 'Total price: $' + totalPrice
+    if(totalPrice == 0){
+     totalPriceDiv.innerText = 'Empty List';
+    } else{
+      totalPriceDiv.innerText = 'Total price: $' + totalPrice
+    }
 
 }
 
