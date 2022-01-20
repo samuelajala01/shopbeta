@@ -11,10 +11,38 @@ body{
   max-width: 100vw;
   color: orange;
   text-align: center;
+  justify-content: center;
+}
+
+nav{
+  height: 3rem;
+  line-height: 3rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid grey;
+  font-size: 1.5rem;
+}
+
+h2{
+  padding: 0.8rem 0;
+}
+
+img{
+  border: 1px solid orange;
+  height: 300px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 button{
   padding: 0.3rem 3rem;
   background-color:orange;
+  font-size: 1.4rem;
+  border: unset;
   border-radius:1rem;
+}
+
+button a{
+  color: white;
 }
