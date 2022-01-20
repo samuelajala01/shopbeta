@@ -37,7 +37,7 @@ itemsDiv.innerHTML = allItems.map(item => `
     const  arrayOfPrices = allItems.map(item => item.price * item.quantity)
     const totalPrice = arrayOfPrices.reduce((a, b) => a + b, 0)
     
-    if(totalPrice == 0){
+    if(totalPrice === 0 && arrayOfPrices.length === 0){
 
       totalPriceDiv.innerHTML = `
      <img src="./assets/shop-icon-128.png" id ="empty-div-img">
