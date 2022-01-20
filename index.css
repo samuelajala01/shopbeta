@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body{
@@ -9,6 +10,11 @@ body{
   width: 100vw;
   max-width: 100vw;
   color: orange;
-  background-color: hsl(0, 72%, 41%);
   text-align: center;
+}
+
+button{
+  padding: 0.3rem 3rem;
+  background-color:orange;
+  border-radius:1rem;
 }
