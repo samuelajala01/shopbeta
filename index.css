@@ -5,12 +5,17 @@
   text-decoration: none;
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.856);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 h2 {
   padding: 0.8rem 0;
 }
 
 nav {
-  background: orange;
+  background: rgb(255, 145, 0);
   font-size: 1.2em;
   height: 3rem;
   line-height: 3rem;
@@ -22,11 +27,12 @@ nav {
 .container {
   margin: auto;
   padding: 1rem;
-  width: 80vw;
+  width: 40vw;
+  min-width: fit-content;
 }
 
 img {
-  border: 1px solid orange;
+  border: 1px solid rgb(255, 123, 0);
   height: 300px;
   width: 90%;
   display: flex;
@@ -37,11 +43,12 @@ img {
 #itemForm {
   border: 1px solid gray;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.8rem;
   padding-bottom: 2rem;
 }
 
 #itemForm label {
+  color: white;
   display: block;
   margin-bottom: 1rem;
   margin-left: 1rem;
@@ -78,6 +85,7 @@ button {
 #deleteAllItemButton {
   border: unset;
   background-color: red;
+  color: #fff;
   margin-left: 1rem;
   padding: 0.5rem;
   position: relative;
@@ -141,7 +149,7 @@ button {
 }
 
 #totalPriceDiv {
-  background-color: orange;
+  background-color: rgb(255, 145, 0);
   text-align: center;
   font-size: 1.5rem;
   width: fit-content;
