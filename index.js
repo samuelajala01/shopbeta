@@ -36,6 +36,7 @@ const populateitemsDiv = async () => {
     `
     )
     .join("")
+
   const arrayOfPrices = allItems.map((item) => item.price * item.quantity)
   const totalPrice = arrayOfPrices.reduce((a, b) => a + b, 0)
 
