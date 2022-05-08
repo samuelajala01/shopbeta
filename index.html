@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShopBeta</title>
     <link rel="icon" href="./assets/shop-icon-128.png" />
-    <!-- <link rel="stylesheet" href="./main-page.css" /> -->
     <link rel="manifest" href="./manifest.json" />
     <link href="./index.css" type="text/css" rel="stylesheet" />
 
     <script src="./dexie.min.js"></script>
     <script>
-      // if ("serviceWorker" in navigator) {
-      //   window.addEventListener("load", () => {
-      //     navigator.serviceWorker.register("./sw.js")
-      //   })
-      // }
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js")
+        })
+      }
     </script>
   </head>
   <body>
