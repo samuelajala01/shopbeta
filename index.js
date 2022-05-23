@@ -27,10 +27,10 @@ const populateitemsDiv = async () => {
       <p>$${item.price} x ${item.quantity}</p>
     </div>
     <button class="editButton" onclick="editItem(${item.id})">
-    E
+    <i class="fa-solid fa-pen"></i>
     </button>
     <button class="deleteButton" onclick="removeItem(${item.id})">
-    X
+    <i class="fa-solid fa-trash"></i>
     </button>
     </div>
     `
