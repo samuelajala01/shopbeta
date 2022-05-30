@@ -21,7 +21,7 @@ nav {
   line-height: 3rem;
   color: white;
   padding-left: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .container {
@@ -31,43 +31,38 @@ nav {
   min-width: fit-content;
 }
 
-img {
-  border: 1px solid rgb(255, 123, 0);
-  height: 300px;
-  width: 90%;
-  display: flex;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-
 #itemForm {
   border: 1px solid gray;
   border-radius: 1rem;
-  padding: 1.8rem;
+  padding: 1.4rem;
   padding-bottom: 2rem;
+  margin: auto;
 }
 
 #itemForm label {
   color: white;
-  display: block;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  display: flex;
+  margin-bottom: 1.5rem;
 }
 
 #itemForm input {
   height: 2rem;
-  text-align: center;
+  display: flex;
+  color: white;
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
   border: 1px solid #bfbfbf;
   border-radius: 0.5rem;
-}
-
-#price {
-  padding-bottom: 2rem;
 }
 
 #quantityInput,
 #priceInput {
   width: 3rem;
+  background: transparent;
+}
+
+#nameInput {
+  background: transparent;
 }
 
 button {
@@ -79,7 +74,6 @@ button {
   background: rgb(5, 180, 5);
   color: #fff;
   padding: 0.5rem;
-  margin-left: 1.1rem;
 }
 
 #deleteAllItemButton {
@@ -88,22 +82,21 @@ button {
   color: #fff;
   margin-left: 1rem;
   padding: 0.5rem;
-  position: relative;
-  left: 8rem;
-  bottom: 3.98rem;
 }
 
 #itemsDiv {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  border: 1.5rem solid transparent;
 }
 
 .item {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 12fr 1fr 1fr;
   background: #eaeaea;
   margin-bottom: 0.5rem;
+  text-align: center;
+  max-width: 33rem;
 }
 
 .checkbox {

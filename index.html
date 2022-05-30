@@ -39,15 +39,16 @@
 
         <label id="price">
           Price:
-          <input type="number" id="priceInput" required />
+          <input type="number" id="priceInput" required value="1" />
         </label>
 
         <button type="submit" id="addItemButton">Add Item</button>
+        <button id="deleteAllItemButton">Delete All</button>
       </form>
-      <button id="deleteAllItemButton">Delete All</button>
+
+      <div id="itemsDiv"></div>
     </div>
 
-    <div id="itemsDiv"></div>
     <div id="totalPriceDiv"></div>
 
     <script src="./index.js"></script>
